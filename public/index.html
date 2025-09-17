@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Cinema App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Logged-out Landing (Not a modal anymore) -->
+  <div id="landing" class="landing">
+    <h1>🎬 Cinema</h1>
+
+    <div class="auth-tabs">
+      <button id="tabLogin" class="tab active">Login</button>
+      <button id="tabRegister" class="tab">Register</button>
+    </div>
+
+    <div class="auth-panels">
+      <form id="loginForm" class="card form">
+        <h2>Login</h2>
+        <input id="loginEmail" type="email" placeholder="Email" required />
+        <input id="loginPassword" type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <div id="loginMsg" class="message"></div>
+      </form>
+
+      <form id="registerForm" class="card form hidden">
+        <h2>Register</h2>
+        <div class="row">
+          <input id="regName" placeholder="Name" required />
+          <input id="regSurname" placeholder="Surname" required />
+        </div>
+        <input id="regEmail" type="email" placeholder="Email" required />
+        <input id="regPassword" type="password" placeholder="Password" required />
+        <button type="submit">Create account</button>
+        <div id="regMsg" class="message"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- App (logged-in) -->
+  <div id="app" class="hidden">
+    <nav class="navbar">
+      <div class="nav-left">
+        <span class="brand">🎬 Cinema</span>
+        <button id="navMovies" class="link">Movies</button>
+        <button id="navCart" class="link">Cart <span id="cartCount" class="badge">0</span></button>
+        <button id="navTickets" class="link">Tickets</button>
+      </div>
+      <div class="nav-right">
+        <button id="navProfile" class="link">Profile</button>
+        <button id="btnLogout" class="link danger">Logout</button>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- Movies page -->
+      <section id="viewMovies">
+        <h2>Movies</h2>
+        <div id="moviesGrid" class="grid"></div>
+
+        <div id="sessionsPanel" class="panel hidden">
+          <h3 id="sessionsTitle">Sessions</h3>
+          <div id="sessionsList" class="list"></div>
+        </div> <!-- ✅ close sessionsPanel -->
+
+        <div id="seatsPanel" class="panel hidden">
+          <h3 id="seatsTitle">Choose Seats</h3>
+          <div class="legend">
+            <span class="legend-box available"></span> Available
+            <span class="legend-box occupied"></span> Occupied
+            <span class="legend-box selected"></span> Selected
+          </div>
+          <div id="seatsGrid" class="seats"></div>
+          <div class="actions">
+            <button id="btnAddToCart">Add to Cart</button>
+            <button id="btnDoneEdit" class="secondary hidden">Done</button>
+            <div id="seatsMsg" class="message"></div>
+          </div>
+        </div> <!-- ✅ close seatsPanel -->
+      </section>
+
+      <!-- Cart page -->
+      <section id="viewCart" class="hidden">
+        <h2>Shopping Cart</h2>
+        <div id="cartList"></div>
+        <div id="cartTotals" class="totals"></div>
+        <div class="actions">
+          <button id="btnCheckoutSelected">Checkout Selected</button>
+          <button id="btnClearCart" class="secondary">Clear Cart</button>
+          <div id="cartMsg" class="message"></div>
+        </div>
+      </section>
+
+      <!-- Tickets page -->
+      <section id="viewTickets" class="hidden">
+        <h2>My Tickets</h2>
+        <div id="ticketsList"></div>
+      </section>
+
+      <!-- Profile page -->
+      <section id="viewProfile" class="hidden">
+        <h2>Profile</h2>
+        <div id="profileBox" class="profile-box"></div>
+        <h3>Change Password</h3>
+        <form id="changePassForm" class="form">
+          <input id="curPass" type="password" placeholder="Current password" required />
+          <input id="newPass" type="password" placeholder="New password" required />
+          <button type="submit">Change Password</button>
+          <div id="passMsg" class="message"></div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <!-- JS modules -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
