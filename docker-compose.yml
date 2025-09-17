@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DATA_DIR=/app/data
+      - JWT_SECRET=dev-secret
+    volumes:
+      - cinema_data:/app/data
+volumes:
+  cinema_data:
