@@ -1,0 +1,354 @@
+[
+  {
+    "id": "s1",
+    "movieId": "m1",
+    "startTime": "2025-09-20T18:00:00",
+    "room": "Room 1",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+
+  },
+  {
+    "id": "s2",
+    "movieId": "m1",
+    "startTime": "2025-09-20T20:00:00",
+    "room": "Room 2",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+
+  },
+  {
+    "id": "s3",
+    "movieId": "m1",
+    "startTime": "2025-09-21T18:00:00",
+    "room": "Room 1",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s4",
+    "movieId": "m1",
+    "startTime": "2025-09-21T20:00:00",
+    "room": "Room 2",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s5",
+    "movieId": "m1",
+    "startTime": "2025-09-22T19:00:00",
+    "room": "Room 1",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s6",
+    "movieId": "m2",
+    "startTime": "2025-09-20T18:30:00",
+    "room": "Room 1",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s7",
+    "movieId": "m2",
+    "startTime": "2025-09-20T21:00:00",
+    "room": "Room 3",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s8",
+    "movieId": "m2",
+    "startTime": "2025-09-21T17:30:00",
+    "room": "Room 2",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s9",
+    "movieId": "m2",
+    "startTime": "2025-09-21T20:30:00",
+    "room": "Room 1",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s10",
+    "movieId": "m2",
+    "startTime": "2025-09-22T19:30:00",
+    "room": "Room 2",
+    "rows": 5,
+    "cols": 8,
+    "price": 150,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s11",
+    "movieId": "m3",
+    "startTime": "2025-09-20T19:00:00",
+    "room": "Room 4",
+    "rows": 6,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s12",
+    "movieId": "m3",
+    "startTime": "2025-09-20T21:30:00",
+    "room": "Room 4",
+    "rows": 6,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s13",
+    "movieId": "m3",
+    "startTime": "2025-09-21T18:30:00",
+    "room": "Room 4",
+    "rows": 6,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s14",
+    "movieId": "m3",
+    "startTime": "2025-09-21T21:00:00",
+    "room": "Room 2",
+    "rows": 6,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s15",
+    "movieId": "m3",
+    "startTime": "2025-09-22T20:00:00",
+    "room": "Room 1",
+    "rows": 6,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s16",
+    "movieId": "m4",
+    "startTime": "2025-09-20T18:00:00",
+    "room": "Room 5",
+    "rows": 6,
+    "cols": 8,
+    "price": 170,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s17",
+    "movieId": "m4",
+    "startTime": "2025-09-20T20:30:00",
+    "room": "Room 5",
+    "rows": 6,
+    "cols": 8,
+    "price": 170,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s18",
+    "movieId": "m4",
+    "startTime": "2025-09-21T17:30:00",
+    "room": "Room 3",
+    "rows": 6,
+    "cols": 8,
+    "price": 170,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s19",
+    "movieId": "m4",
+    "startTime": "2025-09-21T20:30:00",
+    "room": "Room 1",
+    "rows": 6,
+    "cols": 8,
+    "price": 170,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s20",
+    "movieId": "m4",
+    "startTime": "2025-09-22T19:00:00",
+    "room": "Room 2",
+    "rows": 6,
+    "cols": 8,
+    "price": 170,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s21",
+    "movieId": "m5",
+    "startTime": "2025-09-20T19:15:00",
+    "room": "Room 2",
+    "rows": 6,
+    "cols": 8,
+    "price": 180,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s22",
+    "movieId": "m5",
+    "startTime": "2025-09-20T21:45:00",
+    "room": "Room 3",
+    "rows": 6,
+    "cols": 8,
+    "price": 180,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s23",
+    "movieId": "m5",
+    "startTime": "2025-09-21T18:15:00",
+    "room": "Room 2",
+    "rows": 6,
+    "cols": 8,
+    "price": 180,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s24",
+    "movieId": "m5",
+    "startTime": "2025-09-21T20:45:00",
+    "room": "Room 3",
+    "rows": 6,
+    "cols": 8,
+    "price": 180,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s25",
+    "movieId": "m5",
+    "startTime": "2025-09-22T20:15:00",
+    "room": "Room 4",
+    "rows": 6,
+    "cols": 8,
+    "price": 180,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s26",
+    "movieId": "m6",
+    "startTime": "2025-09-20T18:45:00",
+    "room": "Room 1",
+    "rows": 5,
+    "cols": 8,
+    "price": 165,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s27",
+    "movieId": "m6",
+    "startTime": "2025-09-20T21:15:00",
+    "room": "Room 2",
+    "rows": 5,
+    "cols": 8,
+    "price": 165,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s28",
+    "movieId": "m6",
+    "startTime": "2025-09-21T17:45:00",
+    "room": "Room 5",
+    "rows": 5,
+    "cols": 8,
+    "price": 165,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s29",
+    "movieId": "m6",
+    "startTime": "2025-09-21T20:15:00",
+    "room": "Room 5",
+    "rows": 5,
+    "cols": 8,
+    "price": 165,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s30",
+    "movieId": "m6",
+    "startTime": "2025-09-22T19:45:00",
+    "room": "Room 3",
+    "rows": 5,
+    "cols": 8,
+    "price": 165,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s31",
+    "movieId": "m7",
+    "startTime": "2025-09-20T19:30:00",
+    "room": "Room 3",
+    "rows": 5,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s32",
+    "movieId": "m7",
+    "startTime": "2025-09-20T22:00:00",
+    "room": "Room 4",
+    "rows": 5,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s33",
+    "movieId": "m7",
+    "startTime": "2025-09-21T18:45:00",
+    "room": "Room 2",
+    "rows": 5,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s34",
+    "movieId": "m7",
+    "startTime": "2025-09-21T21:15:00",
+    "room": "Room 1",
+    "rows": 5,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  },
+  {
+    "id": "s35",
+    "movieId": "m7",
+    "startTime": "2025-09-22T20:30:00",
+    "room": "Room 2",
+    "rows": 5,
+    "cols": 8,
+    "price": 160,
+    "occupiedSeats": []
+  }
+]

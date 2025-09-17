@@ -1,0 +1,20 @@
+[
+  {
+    "id": "d1",
+    "code": "WELCOME10",
+    "percent": 10,
+    "used": false
+  },
+  {
+    "id": "d2",
+    "code": "STUDENT15",
+    "percent": 15,
+    "used": false
+  },
+  {
+    "id": "d3",
+    "code": "WEEKEND20",
+    "percent": 20,
+    "used": false
+  }
+]

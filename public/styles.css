@@ -1,5 +1,5 @@
     * { box-sizing: border-box; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#f6f7fb; margin:0; color:#111827; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#f5c7f5; margin:0; color:#111827; }
     h1, h2, h3 { margin: 8px 0 12px; }
     .hidden { display:none !important; }
 
@@ -13,9 +13,9 @@
     .form { display:flex; flex-direction:column; gap:10px; }
     .row { display:flex; gap:10px; }
     input { padding:10px 12px; border:1px solid #d0d7de; border-radius:8px; background:#fff; }
-    button { padding:10px 14px; border:0; border-radius:8px; background:#2563eb; color:#fff; cursor:pointer; }
+    button { padding:10px 14px; border:0; border-radius:8px; background:#cf72cf; color:#fff; cursor:pointer; }
     button.secondary { background:#e5e7eb; color:#111827; }
-    button.danger { background:#ef4444; color:#fff; }
+    button.danger { background:#da25bb; color:#fff; }
     .message { font-size: 13px; color:#444; min-height:16px; }
 
     /* App */
@@ -37,7 +37,7 @@
     .legend-box { width:16px; height:16px; border-radius:4px; border:1px solid #cbd5e1; display:inline-block; }
     .legend-box.available { background:#fff; }
     .legend-box.occupied { background:#e5e7eb; }
-    .legend-box.selected { background:#cfe9ff; border-color:#7cb6ff; }
+    .legend-box.selected { background:#edcdf3; border-color:#7cb6ff; }
 
     .seats { display:grid; gap:8px; margin: 12px 0; }
     .seat {
@@ -46,7 +46,7 @@
     cursor:pointer; user-select:none; font-size:13px;
     }
     .seat.occupied { background:#e5e7eb; color:#666; cursor:not-allowed; }
-    .seat.selected { background:#cfe9ff; border-color:#7cb6ff; }
+    .seat.selected { background:#edcdf3; border-color:#edbff5; }
 
     .actions { display:flex; align-items:center; gap:10px; margin-top:6px; }
     .totals { margin-top: 10px; font-weight: 600; }
@@ -58,8 +58,8 @@
 
     /* Landing tabs: make both static colored buttons (no active color change) */
     .auth-tabs { display:flex; gap:8px; }
-    .tab { padding:10px 14px; border:0; border-radius:8px; background:#2563eb; color:#fff; cursor:pointer; }
-    .tab.active { background:#2563eb; color:#fff; } /* same as .tab for static color */
+    .tab { padding:10px 14px; border:0; border-radius:8px; background:#cf72cf; color:#fff; cursor:pointer; }
+    .tab.active { background:#cf72cf; color:#fff; } /* same as .tab for static color */
 
     /* Seat chips & discount inputs in cart */
     .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
