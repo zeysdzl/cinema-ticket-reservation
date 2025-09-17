@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "Cinema Ticket Reservation API", "version": "1.5.0", "description": "JWT auth, 5-min holds, per-session discounts, batch checkout, tickets." },
+  "servers": [{ "url": "http://localhost:3000" }],
+  "paths": {
+    "/api/auth/register": { "post": { "summary": "Register", "requestBody": { "required": true, "content": { "application/json": { "schema": { "type": "object", "required": ["name","surname","email","password"], "properties": { "name":{"type":"string"}, "surname":{"type":"string"}, "email":{"type":"string"}, "password":{"type":"string"} } } } } }, "responses": { "201": { "description": "OK" }, "409": { "description": "Email exists" } } } },
+    "/api/auth/login": { "post": { "summary": "Login", "requestBody": { "required": true, "content": { "application/json": { "schema": { "type": "object", "required": ["email","password"], "properties": { "email":{"type":"string"}, "password":{"type":"string"} } } } } }, "responses": { "200": { "description": "OK" }, "401": { "description": "Invalid" } } } },
+    "/api/users/me": { "get": { "summary": "Me", "security": [{ "bearerAuth": [] }], "responses": { "200": { "description": "OK" }, "401": { "description": "Unauthorized" } } } },
+    "/api/users/change-password": { "post": { "summary": "Change password", "security": [{ "bearerAuth": [] }], "requestBody": { "required": true, "content": { "application/json": { "schema": { "type": "object", "required": ["currentPassword","newPassword"], "properties": { "currentPassword":{"type":"string"}, "newPassword":{"type":"string"} } } } } }, "responses": { "200": { "description": "OK" }, "401": { "description": "Unauthorized" } } } },
+
+    "/api/movies": { "get": { "summary": "List movies", "responses": { "200": { "description": "OK" } } } },
+    "/api/sessions": { "get": { "summary": "List sessions", "parameters": [{ "in":"query", "name":"movieId", "schema": { "type":"string" } }], "responses": { "200": { "description": "OK" } } } },
+    "/api/sessions/{id}": { "get": { "summary": "Session with availability & holds", "parameters": [{ "in":"path", "name":"id", "required":true, "schema":{"type":"string"} }], "responses": { "200": { "description": "OK" } } } },
+
+    "/api/holds": {
+      "post": { "summary": "Hold seats for 5 minutes", "security":[{"bearerAuth":[]}], "responses": { "201": { "description":"Held" } } },
+      "delete": { "summary": "Release held seats", "security":[{"bearerAuth":[]}], "responses": { "200": { "description":"Released" } } }
+    },
+
+    "/api/discounts/validate": {
+      "post": {
+        "summary": "Validate a discount code",
+        "security": [{ "bearerAuth": [] }],
+        "requestBody": { "required": true, "content": { "application/json": { "schema": { "type":"object", "required":["code"], "properties": { "code":{"type":"string"} } } } } },
+        "responses": { "200": { "description": "Valid" }, "404": { "description": "Not found" }, "409": { "description": "Already used" } }
+      }
+    },
+
+    "/api/reservations": { "post": { "summary":"Create single reservation", "security":[{"bearerAuth":[]}], "responses": { "201": { "description":"OK" } } } },
+
+    "/api/checkout": {
+      "post": {
+        "summary": "Batch checkout (supports per-session discount code)",
+        "security": [{ "bearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "type":"object", "required":["items"], "properties": { "items": { "type":"array", "items": { "type":"object", "required":["sessionId","seats"], "properties": { "sessionId":{"type":"string"}, "seats":{"type":"array","items":{"type":"string"}}, "discountCode":{"type":"string"} } } } } } }
+          }
+        },
+        "responses": { "200": { "description": "Per-item results (errors include invalid/used discount)" } }
+      }
+    },
+
+    "/api/tickets": { "get": { "summary":"My tickets", "security":[{"bearerAuth":[]}], "responses": { "200": { "description":"OK" } } } }
+  },
+  "components": { "securitySchemes": { "bearerAuth": { "type":"http", "scheme":"bearer", "bearerFormat":"JWT" } } }
+}
