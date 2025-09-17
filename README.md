@@ -1,4 +1,4 @@
-# Cinema Ticket Reservation (File-based, Node.js, Swagger, Docker)
+# Cinema Ticket Reservation (File-based, Node.js, Swagger)
 
 ## Run locally
 ```bash
