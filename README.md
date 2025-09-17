@@ -2,6 +2,8 @@
 
 ## Run locally
 ```bash
+
+npm install express cors
 npm run dev
 # http://localhost:3000
 # http://localhost:3000/docs
